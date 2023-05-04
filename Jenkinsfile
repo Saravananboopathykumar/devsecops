@@ -57,7 +57,9 @@ pipeline {
  //   applicationURL="http://devsecops-demo.eastus.cloudapp.azure.com"
  //   applicationURI="/increment/99"
  // }
-
+tools {
+  git 'GitTool'
+}
   stages {
 
      stage('Build Artifact - Maven') {
