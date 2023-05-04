@@ -83,9 +83,10 @@ pipeline {
                 sh 'printenv'
                 sh 'sudo docker build -t saravananboopathykumar/numeric-app:""$GIT_COMMIT"" .'
                 sh 'docker push saravananboopathykumar/numeric-app:""$GIT_COMMIT""'            
-      }
+             }   
         }
-        }
+    }
+}
 }
 
  //    stage('Mutation Tests - PIT') {
