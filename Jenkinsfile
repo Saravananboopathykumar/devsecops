@@ -1,4 +1,4 @@
-@Library('slack@2.2.1') _
+//@Library('slack@2.2.1') _
 
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
@@ -38,13 +38,13 @@
 //}
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
-library (
-   identifier: 'slack@2.2.1',
-   retriever: modernSCM(
-     [$class: 'GitSCMSource',
-      remote: 'https://github.com/jenkinsci/slack-plugin.git']
-   )
-)
+//library (
+ //  identifier: 'slack@2.2.1',
+ //  retriever: modernSCM(
+  //   [$class: 'GitSCMSource',
+  //    remote: 'https://github.com/jenkinsci/slack-plugin.git']
+  // )
+//)
 
 pipeline {
   agent any
