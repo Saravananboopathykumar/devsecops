@@ -77,6 +77,7 @@ pipeline {
             jacoco execPattern: 'target/jacoco.exec'         
         }
     }
+}
 
  //    stage('Mutation Tests - PIT') {
  //      steps {
@@ -125,7 +126,6 @@ pipeline {
       }
         }
         }
-}
 }
 }
  //    stage('Vulnerability Scan - Kubernetes') {
