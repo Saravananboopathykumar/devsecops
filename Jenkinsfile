@@ -1,4 +1,4 @@
-//@Library('slack') _
+@Library('slack@2.2.1') _
 
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
