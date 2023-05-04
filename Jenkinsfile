@@ -58,7 +58,7 @@ pipeline {
  //   applicationURI="/increment/99"
  // }
 tools {
-  git 'GitTool'
+  git branch: 'main', url: 'https://github.com/Saravananboopathykumar/devsecops.git'
 }
   stages {
 
