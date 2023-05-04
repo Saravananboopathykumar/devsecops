@@ -57,9 +57,7 @@ pipeline {
  //   applicationURL="http://devsecops-demo.eastus.cloudapp.azure.com"
  //   applicationURI="/increment/99"
  // }
-tools {
-  git branch: 'main', url: 'https://github.com/Saravananboopathykumar/devsecops.git'
-}
+
   stages {
 
      stage('Build Artifact - Maven') {
@@ -90,8 +88,6 @@ tools {
         }
         }
 }
-
-
 }
 
  //    stage('Mutation Tests - PIT') {
