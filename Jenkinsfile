@@ -38,6 +38,13 @@ List<Map> getFailedStages( RunWrapper build ) {
 }
 
 /////// ******************************* Code for fectching Failed Stage Name ******************************* ///////
+library (
+   identifier: 'slack@3.1.1',
+   retriever: modernSCM(
+     [$class: 'GitSCMSource',
+      remote: 'https://github.com/jenkinsci/slack-plugin.git']
+   )
+)
 
 pipeline {
   agent any
